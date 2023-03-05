@@ -29,11 +29,11 @@ public class Rout {
         this.distance = distance;
     }
 
-   //public boolean checkFuel(Vehicle vehicle) {
-   //    if (vehicle.getTankDistance() > distance) {
-   //        return true;
-   //    } else {
-   //        return false;
-   //    }
-   //}
+   public boolean checkFuel(Vehicle vehicle) {
+       if (vehicle.getTankDistance() > distance) {
+           return true;
+       } else {
+           return false;
+       }
+   }
 }

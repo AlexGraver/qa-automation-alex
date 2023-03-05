@@ -11,6 +11,8 @@ import java.time.Duration;
 public class FirstSeleniumTest {
     //Локаторы указывают в теле основного метода
     private final By ACCEPT_COOKIES_BTN = By.id("onetrust-accept-btn-handler");
+    private final By CLICK_AUSTRIA_BTN = By.xpath(".//a[@href = 'https://www.discovercars.com/austria']");
+
     @Test
     public void openHomePageCheck() {
         //Если тест выдает ошибку по драйверу, то используем set.Property и указываем путь, куда скачали драйвер
@@ -24,6 +26,8 @@ public class FirstSeleniumTest {
         wait.until(ExpectedConditions.elementToBeClickable(ACCEPT_COOKIES_BTN));
         //Действие с элементом, который нашли по локатору, который указан в поле видимости основного метода
         browser.findElement(ACCEPT_COOKIES_BTN).click();
+
+        browser.findElement(CLICK_AUSTRIA_BTN).click();
 
 
 
